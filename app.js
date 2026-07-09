@@ -7,7 +7,10 @@ const app = express();
 // Enable CORS
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: [
+      "http://localhost:5173",
+      "https://bhavatsyam.netlify.app",
+    ],
     credentials: true,
   })
 );
